@@ -1,0 +1,97 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+html body {
+  background-color: rgba(255, 223, 228, 0.308);
+}
+h1 {
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+.infoHeaderText {
+  color: black;
+  text-align: center;
+}
+i {
+  font-size: 5rem;
+  color: #ec1a83;
+}
+p {
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+span {
+  font-size: 2.5rem;
+  color: hotpink;
+}
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+}
+.headerNav .navButtonContainer {
+  padding-top: 2%;
+  width: 33%;
+  height: 8vh;
+  text-align: center;
+}
+.headerNav a {
+  padding: 2%;
+  margin: 2%;
+}
+.headerNav a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: lightpink;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: url(../hero2.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  border: 1.5px solid black;
+}
+.infoContainer {
+  display: flex;
+  height: 50vh;
+  justify-content: space-around;
+}
+.infoContainer div {
+  text-align: center;
+  width: 20%;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footerContainer2 {
+  padding: 3%;
+  text-align: left;
+}
+footer .footerContainer2 i {
+  font-size: 3rem;
+}
+footer #logoNav {
+  position: relative;
+  right: 5%;
+}
