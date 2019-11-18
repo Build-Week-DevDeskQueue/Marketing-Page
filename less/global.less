@@ -1,18 +1,28 @@
 html {
     font-size: 62.5%;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-   body{
-       background-color: rgba(255, 223, 228, 0.308);
-   }
+  
   }
 
  h1{
      color:white;
      padding:2%;
+     font-size:4rem;
      text-align: center;
 
      
  }
+ h3{
+     font-size:2.5rem;
+ }
+
+ h4{
+     font-size:2rem;
+     @media @phone {
+         font-size: 1.2rem;
+     }
+    
+    }
 
  
  .infoHeaderText{
@@ -40,5 +50,34 @@ p{
 span{
     font-size:2.5rem;
     color:hotpink;
+}
+button{
+    
+
+    
+    height:7vh;
+    background-color:rgb(228, 19, 123);
+    color:white;
+    width:15%;
+    font-weight:bold;
+    font-size:1.5rem;
+    border-radius:10%;
+
+    @media @phone {
+        width:50%;
+    }
+
+}
+a{
+    padding:2%;
+    margin:2%;
+    font-size:2rem;
+    color:rgb(228, 19, 123);
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
 

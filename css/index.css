@@ -6,13 +6,22 @@ html {
   font-size: 62.5%;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
-html body {
-  background-color: rgba(255, 223, 228, 0.308);
-}
 h1 {
   color: white;
   padding: 2%;
+  font-size: 4rem;
   text-align: center;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+@media (max-width:500px) {
+  h4 {
+    font-size: 1.2rem;
+  }
 }
 .infoHeaderText {
   color: black;
@@ -30,24 +39,51 @@ span {
   font-size: 2.5rem;
   color: hotpink;
 }
+button {
+  height: 7vh;
+  background-color: #e4137b;
+  color: white;
+  width: 15%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10%;
+}
+@media (max-width:500px) {
+  button {
+    width: 50%;
+  }
+}
+a {
+  padding: 2%;
+  margin: 2%;
+  font-size: 2rem;
+  color: #e4137b;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 .headerNav {
   display: flex;
   justify-content: space-between;
   height: 12vh;
 }
-.headerNav .navButtonContainer {
+.navButtonContainer {
   padding-top: 2%;
   width: 33%;
   height: 8vh;
   text-align: center;
 }
-.headerNav a {
+.navButtonContainer a {
   padding: 2%;
   margin: 2%;
+  font-size: 2rem;
+  color: #e4137b;
+  text-decoration: none;
 }
-.headerNav a:hover {
-  text-decoration-line: underline;
-  text-decoration-color: lightpink;
+.navButtonContainer a:hover {
+  text-decoration: underline;
 }
 footer {
   color: #22283B;
@@ -73,8 +109,13 @@ footer {
 }
 .infoContainer {
   display: flex;
-  height: 50vh;
   justify-content: space-around;
+  padding-bottom: 3%;
+}
+@media (max-width:500px) {
+  .infoContainer {
+    font-size: 1.2rem;
+  }
 }
 .infoContainer div {
   text-align: center;
@@ -82,16 +123,28 @@ footer {
 }
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 100%;
+}
+@media (max-width:500px) {
+  footer {
+    width: 100%;
+  }
+}
+footer div {
+  width: 40%;
 }
 footer .footerContainer2 {
-  padding: 3%;
+  padding-right: 3%;
   text-align: left;
 }
 footer .footerContainer2 i {
   font-size: 3rem;
-}
-footer #logoNav {
   position: relative;
-  right: 5%;
+  left: 70%;
+}
+@media (max-width:500px) {
+  footer .footerContainer2 i {
+    left: 30%;
+  }
 }
