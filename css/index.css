@@ -75,6 +75,16 @@ a:hover {
   height: 8vh;
   text-align: center;
 }
+@media (max-width:500px) {
+  .navButtonContainer {
+    width: 60%;
+  }
+}
+@media (max-width:800px) {
+  .navButtonContainer {
+    width: 70%;
+  }
+}
 .navButtonContainer a {
   padding: 2%;
   margin: 2%;
@@ -147,4 +157,14 @@ footer .footerContainer2 i {
   footer .footerContainer2 i {
     left: 30%;
   }
+}
+.headerContainerFAQ {
+  background: url(../lost.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.headerContainerFAQ h1 {
+  color: black;
 }
