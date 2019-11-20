@@ -2,9 +2,20 @@
   display: flex;
   justify-content: center;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
 html {
   font-size: 62.5%;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Palatino", "URW Palladio L", "serif";
+}
+@media (max-width:500px) {
+  body {
+    width: 95%;
+  }
 }
 h1 {
   color: white;
@@ -12,8 +23,14 @@ h1 {
   font-size: 4rem;
   text-align: center;
 }
+#aboutH1 {
+  color: black;
+  font-size: 5rem;
+}
 h3 {
   font-size: 2.5rem;
+  margin-bottom: 6%;
+  margin-top: 6%;
 }
 h4 {
   font-size: 2rem;
@@ -28,8 +45,9 @@ h4 {
   text-align: center;
 }
 i {
-  font-size: 5rem;
+  font-size: 3rem;
   color: #ec1a83;
+  margin: 2%;
 }
 p {
   font-size: 2rem;
@@ -39,71 +57,65 @@ span {
   font-size: 2.5rem;
   color: hotpink;
 }
-button {
-  height: 7vh;
-  background-color: #e4137b;
-  color: white;
-  width: 15%;
-  font-weight: bold;
-  font-size: 1.5rem;
-  border-radius: 10%;
-}
-@media (max-width:500px) {
-  button {
-    width: 50%;
-  }
-}
-a {
-  padding: 2%;
-  margin: 2%;
-  font-size: 2rem;
-  color: #e4137b;
-  font-weight: bold;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+#teamImg {
+  width: 200px;
+  border-radius: 50%;
 }
 .headerNav {
   display: flex;
   justify-content: space-between;
-  height: 12vh;
+  width: 98%;
 }
-.navButtonContainer {
-  padding-top: 2%;
-  width: 33%;
-  height: 8vh;
-  text-align: center;
+#aboutNav a {
+  padding: 10%;
 }
-@media (max-width:500px) {
-  .navButtonContainer {
-    width: 60%;
-  }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-@media (max-width:800px) {
-  .navButtonContainer {
-    width: 70%;
-  }
-}
-.navButtonContainer a {
-  padding: 2%;
-  margin: 2%;
-  font-size: 2rem;
-  color: #e4137b;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-size: 25px;
+  color: #fffdfd;
+  display: block;
+  transition: 0.3s;
 }
-.navButtonContainer a:hover {
-  text-decoration: underline;
+.sidenav a:hover {
+  color: hotpink;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 footer {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border-top: 0.5px double hotpink;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+footer #footerNav {
+  padding: 2%;
+  margin: 2%;
+  font-size: 2rem;
+  color: #e4137b;
+  font-weight: bold;
+  text-decoration: none;
+}
+footer #footerNav:hover {
+  text-decoration: underline;
 }
 .headerContainer {
   display: flex;
@@ -124,12 +136,20 @@ footer {
 }
 @media (max-width:500px) {
   .infoContainer {
-    font-size: 1.2rem;
+    flex-direction: column;
+    width: 100%;
   }
 }
 .infoContainer div {
   text-align: center;
   width: 20%;
+  padding: 2%;
+}
+@media (max-width:500px) {
+  .infoContainer div {
+    padding: 5%;
+    width: 100%;
+  }
 }
 footer {
   display: flex;
@@ -147,6 +167,12 @@ footer div {
 footer .footerContainer2 {
   padding-right: 3%;
   text-align: left;
+}
+@media (max-width:800px) {
+  footer .footerContainer2 {
+    margin-right: 2%;
+    width: 10%;
+  }
 }
 footer .footerContainer2 i {
   font-size: 3rem;
@@ -167,4 +193,19 @@ footer .footerContainer2 i {
 }
 .headerContainerFAQ h1 {
   color: black;
+}
+.teamContainer {
+  padding: 20px;
+  margin: 16px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.teamContainer hr {
+  color: hotpink !important;
+  font-weight: bold !important;
+}
+.teamContainer div {
+  text-align: center;
 }
