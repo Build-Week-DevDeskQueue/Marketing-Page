@@ -1,0 +1,118 @@
+// Home Content
+
+.headerContainer{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background:url(../hero2.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:80vh;
+    border:1.5px solid black;
+
+}
+
+.infoContainer{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 3%;
+    
+     @media @phone {
+        
+         flex-direction: column;
+         width:100%;
+        
+     }
+
+
+    div{
+        text-align: center;
+        width:20%;
+        padding:2%;
+
+        @media @phone {
+            padding:5%;
+            width:100%;
+            
+        }
+        
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    @media @phone {
+       width:100%;
+    }
+
+    div{
+        width:40%;
+    }
+    .footerContainer2{
+        padding-right:3%;
+        text-align: left;
+        
+        @media @tablet{
+            margin-right:2%;
+            width:10%;
+        }
+
+        i{
+           font-size:3rem;
+           position: relative;
+            left:70%;
+
+            @media @phone {
+                left:30%;
+            }
+         
+        }
+
+    }
+
+}
+
+.headerContainerFAQ{
+    background:url(../lost.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:50vh;
+
+
+    h1{
+        color:black;
+    }
+    
+}
+
+.teamContainer{
+
+    padding: 20px;
+    margin: 16px 10px;
+    display:flex;
+    flex-wrap: wrap;
+   
+
+    hr{
+        border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));  
+    }
+    
+    div{
+        
+text-align:center;
+width:25%;
+margin-bottom:2%;
+
+
+
+    }
+}
+
+
