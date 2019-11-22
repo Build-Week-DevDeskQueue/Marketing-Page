@@ -41,7 +41,7 @@ h4 {
 }
 i {
   font-size: 3rem;
-  color: #ec1a83;
+  color: hotpink;
   margin: 2%;
 }
 p {
@@ -114,7 +114,7 @@ footer #footerNav {
   padding: 2%;
   margin: 2%;
   font-size: 2rem;
-  color: #e4137b;
+  color: hotpink;
   font-weight: bold;
   text-decoration: none;
 }
