@@ -41,7 +41,7 @@ h4 {
 }
 i {
   font-size: 3rem;
-  color: hotpink;
+  color: #d81979;
   margin: 2%;
 }
 p {
@@ -50,7 +50,7 @@ p {
 }
 span {
   font-size: 2.5rem;
-  color: hotpink;
+  color: #d81979;
 }
 #teamImg {
   width: 200px;
@@ -59,6 +59,11 @@ span {
 .headerNav {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  .headerNav {
+    width: 80%;
+  }
 }
 #aboutNav a {
   padding: 10%;
@@ -84,7 +89,7 @@ span {
   transition: 0.3s;
 }
 .sidenav a:hover {
-  color: hotpink;
+  color: #d81979;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -97,7 +102,7 @@ footer {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
-  border-top: 0.5px double hotpink;
+  border-top: 0.5px double #d81979;
   border-radius: 10px;
   display: flex;
   background-color: gainsboro;
@@ -114,9 +119,14 @@ footer #footerNav {
   padding: 2%;
   margin: 2%;
   font-size: 2rem;
-  color: hotpink;
+  color: #d81979;
   font-weight: bold;
   text-decoration: none;
+}
+@media (max-width:500px) {
+  footer #footerNav {
+    font-size: 1.5rem;
+  }
 }
 footer #footerNav:hover {
   text-decoration: underline;
@@ -126,12 +136,13 @@ footer #footerNav:hover {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: url(../hero2.jfif);
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../hero2.jfif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
   border: 1.5px solid black;
+  background-attachment: fixed;
 }
 .infoContainer {
   display: flex;
@@ -188,16 +199,6 @@ footer .footerContainer2 i {
     left: 30%;
   }
 }
-.headerContainerFAQ {
-  background: url(../lost.jfif);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-}
-.headerContainerFAQ h1 {
-  color: black;
-}
 .teamContainer {
   padding: 20px;
   margin: 16px 10px;
@@ -213,4 +214,15 @@ footer .footerContainer2 i {
   text-align: center;
   width: 25%;
   margin-bottom: 2%;
+}
+@media (max-width:500px) {
+  .teamContainer div {
+    width: 35%;
+    margin: 4%;
+  }
+}
+@media (max-width:500px) {
+  .footerContainer1 {
+    width: 10%;
+  }
 }
