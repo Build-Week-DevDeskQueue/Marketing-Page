@@ -13,10 +13,18 @@ html {
   font-family: "Palatino", "URW Palladio L", "serif";
 }
 h1 {
-  color: white;
-  padding: 2%;
-  font-size: 4rem;
+  color: #d81979;
+  font-size: 5rem!important;
   text-align: center;
+  padding-bottom: 18%;
+}
+h2 {
+  font-size: 5rem!important;
+  padding: 3%;
+}
+h5 {
+  font-size: 2rem!important;
+  font-weight: bold!important;
 }
 #aboutH1 {
   color: black;
@@ -28,19 +36,14 @@ h3 {
   margin-top: 6%;
 }
 h4 {
-  font-size: 2rem;
-}
-@media (max-width:500px) {
-  h4 {
-    font-size: 1.2rem;
-  }
+  font-size: 2rem !important;
 }
 .infoHeaderText {
   color: black;
   text-align: center;
 }
 i {
-  font-size: 3rem;
+  font-size: 3rem !important;
   color: #d81979;
   margin: 2%;
 }
@@ -55,6 +58,9 @@ span {
 #teamImg {
   width: 200px;
   border-radius: 50%;
+}
+#aboutH1 {
+  padding: 2%;
 }
 .headerNav {
   display: flex;
@@ -136,10 +142,9 @@ footer #footerNav:hover {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../hero2.jfif);
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../code.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   height: 80vh;
   border: 1.5px solid black;
   background-attachment: fixed;
@@ -205,6 +210,11 @@ footer .footerContainer2 i {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width:500px) {
+  .teamContainer {
+    margin-left: 10%;
+  }
+}
 .teamContainer hr {
   border: 0;
   height: 1px;
@@ -213,7 +223,8 @@ footer .footerContainer2 i {
 .teamContainer div {
   text-align: center;
   width: 25%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
+  padding: 2%;
 }
 @media (max-width:500px) {
   .teamContainer div {
