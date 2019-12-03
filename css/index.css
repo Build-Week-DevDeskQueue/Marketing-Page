@@ -122,10 +122,9 @@ footer {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
-  border-top: 0.5px double #d81979;
+  border-top: 0.5px double grey;
   border-radius: 10px;
   display: flex;
-  background-color: gainsboro;
 }
 @media (max-width:500px) {
   footer {
@@ -160,7 +159,7 @@ footer #footerNav:hover {
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
-  border: 1.5px solid black;
+  border-top: 1px solid grey;
   background-attachment: fixed;
 }
 .infoContainer {
@@ -176,8 +175,9 @@ footer #footerNav:hover {
 }
 .infoContainer div {
   text-align: center;
-  width: 20%;
+  width: 25%;
   padding: 2%;
+  box-shadow: 10px 10px 10px 5px grey;
 }
 @media (max-width:500px) {
   .infoContainer div {
