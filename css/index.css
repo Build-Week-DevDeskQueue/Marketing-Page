@@ -16,7 +16,7 @@ h1 {
   color: #d81979;
   font-size: 5rem!important;
   text-align: center;
-  padding-bottom: 18%;
+  padding-bottom: 20%;
   position: relative;
   bottom: 5%;
 }
@@ -34,7 +34,8 @@ h1 {
 }
 h2 {
   font-size: 5rem!important;
-  padding: 3%;
+  padding: 5%;
+  padding-bottom: 10%;
 }
 h5 {
   font-size: 2rem!important;
@@ -45,9 +46,10 @@ h5 {
   font-size: 5rem;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 6%;
   margin-top: 6%;
+  font-weight: bold !important;
 }
 h4 {
   font-size: 2rem !important;
@@ -72,6 +74,7 @@ span {
 #teamImg {
   width: 200px;
   border-radius: 50%;
+  box-shadow: 1px 1px 70px 5px #d81979;
 }
 #aboutH1 {
   padding: 2%;
